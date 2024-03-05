@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Wisła Rząska - Strona Oficjalna</title>
+    <link rel="icon" href="logo.png">
+
+    <link rel="stylesheet" href="styleMain1.css">
+    <link rel="stylesheet" href="style_2.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <p class="header-background-color"></p>
+        <p class="contact-heading">e-mail: lkswislarzaska@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel: 666 690 015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="location-heading">&nbsp;&nbsp;&nbsp;↪︎ Wapienna 19A, Rząska</p>
+    </div>
+</header>
+
+<div class="fb_image_center">
+    <img class="fb image" src="fb_img.png" alt="Podgląd obrazu" id="myFbImage">
+</div>
+
+<script>
+  var image = document.getElementById("myFbImage");
+  image.addEventListener("click", function() {
+    window.open("https://www.facebook.com/lkswislarzaska", '_blank');
+  });
+</script>
+
+<div class="chat_image_center">
+    <img class="chat image" src="chat_img.png" alt="Podgląd obrazu" id="myChatImage">
+</div>
+
+<script>
+  var image = document.getElementById("myChatImage");
+  image.addEventListener("click", function() {
+    window.open("chat_wisła_rząska/chat.html", '_blank');
+  });
+</script>
+
+<div class="ig_image_center">
+    <img class="ig image" src="ig_img.png" alt="Podgląd obrazu" id="myIgImage">
+</div>
+
+<script>
+  var image = document.getElementById("myIgImage");
+  image.addEventListener("click", function() {
+    window.open("https://www.instagram.com/wislarzaska/", '_blank');
+  });
+</script>
+
+<div class="badge_centre">
+    <img class="badge_img" src="logo.png" alt="Podgląd obrazu">
+</div>
+
+<div class="menu-container">
+    <ul class="menu">
+        <li class="menu-item"><a href="index.html" class="menu-link">AKTUALNOŚCI</a></li>
+        <li class="menu-item has-submenu">
+            <a class="menu-link active">SZKÓŁKA PIŁKARSKA</a>
+            <ul class="submenu">
+                <li><a href="tap_2_1.html">skrzat</a></li>
+                <li><a href="tap_2_2.html">żak młodszy</a></li>
+                <li><a href="tap_2_3.html">żak</a></li>
+                <li><a href="tap_2_4.html">orlik</a></li>
+                <li><a href="tap_2_5.html">młodzik młodszy</a></li>
+                <li><a href="tap_2_6.html">trampkarz młodszy</a></li>
+            </ul>
+        </li>
+        <li class="menu-item"><a href="tap_3.html" class="menu-link">SENIORZY</a></li>
+        <li class="menu-item"><a href="tap_4.html" class="menu-link">O KLUBIE</a></li>
+    </ul>
+</div>
+
+<div class="team_container">
+    <div class="team-image">
+        <img src="1_żak_img.png" alt="Zdjęcie drużyny piłkarskiej">
+    </div>
+    <div class="team-description">
+        <div class="team-info">
+            <h2>ŻAK</h2>
+        </div>
+        <div class="coach-info">
+            <h2>Sclaunich Gulio</h2>
+            <p>Trener</p>
+        </div>
+        <div class="training-dates">
+            <h2>WTOREK, CZWARTEK 15:45 - 17:30</h2>
+            <p>Wapienna 19A, Rząska</p>
+        </div>
+        <div class="battle-cry">
+            <h2>Kraków: F1 Żak "Grupa 1"</h2>
+            <p>
+            <div id="rozgrywki_info" href="https://www.laczynaspilka.pl/rozgrywki?season=2023%2F2024&leagueGroup=e91d244a-2694-4373-8263-cee24a82eaa8&leagueId=20505afb-3cb6-4e59-9bb1-ed56e8201bb8&subLeague=928876fe-72b1-4a01-9971-34f66df51203&enumType=ZpnAndLeagueAndPlay&group=e9c67ede-c821-424d-8163-1e2d4ee1e9fa&voivodeship=e0ca38b1-1dab-47c1-a077-f9d41970e0c5&isAdvanceMode=false&genderType=Male">
+                terminarz
+            </div>
+            </p>
+        </div>
+        <div class="usefull-info">
+            <h2>Informacje bieżące</h2>
+            <p>Turniej mikołajkowy, lokalizacja: Skała, Data: 24.12.2022, Godzina: 12:30</p>
+        </div>
+    </div>
+</div>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var submenuItems = document.querySelectorAll(".has-submenu");
+
+            submenuItems.forEach(function (item) {
+                item.addEventListener("mouseover", function () {
+                    var submenu = this.querySelector(".submenu");
+                    if (submenu) {
+                        submenu.style.display = "block";
+                    }
+                });
+
+                item.addEventListener("mouseout", function () {
+                    var submenu = this.querySelector(".submenu");
+                    if (submenu) {
+                        submenu.style.display = "none";
+                    }
+                });
+            });
+        });
+</script>
+
+<script>
+  var rozgrywki_info = document.getElementById("rozgrywki_info");
+  rozgrywki_info.addEventListener("click", function(event) {
+    event.preventDefault(); // Zapobiega domyślnej akcji linku
+    window.open(rozgrywki_info.getAttribute("href"), '_blank');
+  });
+</script>
+
+</body>
+</html>

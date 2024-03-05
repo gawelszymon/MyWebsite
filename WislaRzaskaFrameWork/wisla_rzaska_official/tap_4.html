@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Wisła Rząska - Strona Oficjalna</title>
+    <link rel="icon" href="logo.png">
+
+    <link rel="stylesheet" href="styleMain1.css">
+    <link rel="stylesheet" href="style_2.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <p class="header-background-color"></p>
+        <p class="contact-heading">e-mail: lkswislarzaska@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel: 666 690 015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="location-heading">&nbsp;&nbsp;&nbsp;↪︎ Wapienna 19A, Rząska</p>
+    </div>
+</header>
+
+<div class="fb_image_center">
+    <img class="fb image" src="fb_img.png" alt="Podgląd obrazu" id="myFbImage">
+</div>
+
+<script>
+  var image = document.getElementById("myFbImage");
+  image.addEventListener("click", function() {
+    window.open("https://www.facebook.com/lkswislarzaska", '_blank'); // Otwarcie w nowej karcie
+  });
+</script>
+
+<div class="chat_image_center">
+    <img class="chat image" src="chat_img.png" alt="Podgląd obrazu" id="myChatImage">
+</div>
+
+<script>
+  var image = document.getElementById("myChatImage");
+  image.addEventListener("click", function() {
+    window.open("/home/szymon/Desktop/wisla_rzaska_website/wisla_rzaska/chat_wisła_rząska/chat.html", '_blank'); // Otwarcie w nowej karcie
+  });
+</script>
+
+<div class="ig_image_center">
+    <img class="ig image" src="ig_img.png" alt="Podgląd obrazu" id="myIgImage">
+</div>
+
+<script>
+  var image = document.getElementById("myIgImage");
+  image.addEventListener("click", function() {
+    window.open("https://www.instagram.com/wislarzaska/", '_blank'); // Otwarcie w nowej karcie
+  });
+</script>
+
+<div class="badge_centre">
+    <img class="badge_img" src="logo.png" alt="Podgląd obrazu">
+</div>
+
+
+<div class="menu-container">
+    <ul class="menu">
+        <li class="menu-item"><a href="index.html" class="menu-link">AKTUALNOŚCI</a></li>
+        <li class="menu-item has-submenu">
+            <a class="menu-link">SZKÓŁKA PIŁKARSKA</a>
+            <ul class="submenu">
+                <li><a href="tap_2_1.html">skrzat</a></li>
+                <li><a href="tap_2_2.html">żak młodszy</a></li>
+                <li><a href="tap_2_3.html">żak</a></li>
+                <li><a href="tap_2_4.html">orlik</a></li>
+                <li><a href="tap_2_5.html">młodzik młodszy</a></li>
+                <li><a href="tap_2_6.html">trampkarz młodszy</a></li>
+            </ul>
+        </li>
+        <li class="menu-item"><a href="tap_3.html" class="menu-link">SENIORZY</a></li>
+        <li class="menu-item"><a href="tap_4.html" class="menu-link active">O KLUBIE</a></li>
+    </ul>
+</div>
+
+<div class="sectionAboutInGeneral">
+<div class="sectionAbout">
+    <h2>WSPÓŁCZESNOŚĆ</h2>
+    <p>Obecnie LKS Wisła Rząska zrzesza ponad 100 aktywnych zawodników. Nasi podopieczni od pierwszych lat życia mają możliwość przejścia przez etap szkolenia w
+        praktycznie każdej kategorii wiekowej. Rozpoczęcie treningów pod naszym szyldem jest świetną okazją do sportowego sprawdzenia się w zooraganizowanej
+        strukturze klubu piłkarskiego. Dla młodszych zawodników jesteśmy szczególnym miejscem do rozwoju i wyeksponowania swoich możliwości,
+        w taki sposób, aby spróbować swoich sił jeszcze wyżej.</p>
+</div>
+
+<div class="sectionAbout">
+    <h2>HISTORIA</h2>
+    <p>Tradycja piłkarskiego klubu sportowego w Rząsce sięga roku 1925, jednak obecną nazwę zawdzięcza on powiązaniom z Towarzystwem Sportowym Wisła, kiedy to w 1936 roku stał się
+        jednym z wielu obecnych na terenach Galicji filii TS. W 1925 roku Władysław Sikorski założył w Rząsce klub Gwiazda. Rok później zespół ten przyjął nazwę Warna,
+        a jednym z jego działaczy był Stanisław Marcinkowski. Marcinkowski - wcześniej lewoskrzydłowy krakowskiej Wisły - zamieszkał w Rząsce, został prezesem Gwiazdy-Warny i znacząco
+        przyczynił się do rozwoju klubu (założył chociażby sekcję teatralną). Warna była rozpoznawalna przez zielono-białe barwy, a jej emblematem była zielona gwiazda.
+        Rozkwit klubu nastąpił w latach 50. gdy działalność prowadziły sekcje piłki nożnej, tenisa stołowego, zapasów, strzelectwa i kolarstwa.
+        Klub zawiesił działalność w 1968 roku - ponowna reaktywacja nastąpiła w 1992 roku.</p>
+</div>
+
+<div class="sectionAbout">
+    <h2>KONTROWERSJE</h2>
+    <p>Klub zawiesił działalność w 1934 roku w nietypowych okolicznościach. W czasie meczu o awans do B-klasy z zespołem z krakowsikego Prokocimia wywiązała się strzelanina.
+        Przy użyciu pistoletu swoje niezadowolenie z otrzymania czerwonej kartki wyrażał jeden z piłkarzy. Relacje z tego wydarzenia są sprzeczne w zakresie
+        przynależności klubowej porywczego strzelca, jednak to Warna jako gospodarz meczu została surowo ukarana- dwuletnim zakazem działalności.</p>
+</div>
+</div>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var submenuItems = document.querySelectorAll(".has-submenu");
+
+            submenuItems.forEach(function (item) {
+                item.addEventListener("mouseover", function () {
+                    var submenu = this.querySelector(".submenu");
+                    if (submenu) {
+                        submenu.style.display = "block";
+                    }
+                });
+
+                item.addEventListener("mouseout", function () {
+                    var submenu = this.querySelector(".submenu");
+                    if (submenu) {
+                        submenu.style.display = "none";
+                    }
+                });
+            });
+        });
+</script>
+
+</body>
+</html>

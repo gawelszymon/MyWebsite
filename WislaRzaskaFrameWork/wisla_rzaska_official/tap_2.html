@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Wisła Rząska - Strona Oficjalna</title>
+    <link rel="icon" href="logo.png">
+
+    <link rel="stylesheet" href="styleMain1.css">
+    <link rel="stylesheet" href="style_2.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <p class="header-background-color"></p>
+        <p class="contact-heading">mail: lkswislarzaska@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel: 666 690 015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="location-heading">&nbsp;&nbsp;&nbsp;↪︎ Wapienna 19A, Rząska</p>
+    </div>
+</header>
+
+<div class="header_image_center">
+    <img class="header image" src="fb_img_1.png" alt="Podgląd obrazu" id="myImage">
+</div>
+
+<script>
+  var image = document.getElementById("myImage");
+  image.addEventListener("click", function() {
+    window.open("https://www.facebook.com/lkswislarzaska", '_blank'); // Otwarcie w nowej karcie
+  });
+</script>
+
+<div class="badge_centre">
+    <img class="badge_img" src="logo.png" alt="Podgląd obrazu">
+</div>
+
+<div class="menu-container">
+    <ul class="menu">
+        <li class="menu-item"><a href="index.html" class="menu-link">AKTUALNOŚCI</a>
+            <!--  <ul class="submenu">
+                  <li><a href="tap_2_1.html">Podstrona 1.1</a></li>
+                  <li><a href="tap_2_2.html">Podstrona 1.2</a></li>
+              </ul> -->
+        </li>
+        <li class="menu-item"><a href="tap_2.html" class="menu-link active">SZKÓŁKA PIŁKARSKA</a>
+            <ul class="submenu">
+                <li><a href="tap_2_1.html">Podstrona 1.1</a></li>
+                <li><a href="tap_2_2.html">Podstrona 2.2</a></li>
+            </ul>
+        </li>
+        <li class="menu-item"><a href="tap_3.html" class="menu-link">SENIORZY</a></li>
+        <li class="menu-item"><a href="tap_4.html" class="menu-link">O KLUBIE</a></li>
+    </ul>
+</div>
+
+

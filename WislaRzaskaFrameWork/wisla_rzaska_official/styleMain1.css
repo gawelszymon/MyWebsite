@@ -1,0 +1,837 @@
+/*Zdjęcie tła*/
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:wght@300&family=Ubuntu:wght@500&display=swap');
+body {
+    background-image: url("background_photo_5.png");
+    background-size: cover;
+    font-family: 'Chakra Petch', sans-serif;
+    ;
+}
+
+@media screen and (min-width: 1376px) {
+
+/*aktywna podstrona*/
+.menu-link.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.1em;
+    background-color: #333399;
+    position: relative;
+    bottom: -0.4em;
+}
+
+/*nagłówek kontakt*/
+.contact-heading {
+    font-size: 0.9em;
+    background-color: rgba(255, 0, 0, 0);
+    padding: 0.3em;
+    position: absolute;
+    top: -0.85em;
+    left: 0em;
+    right: 0em;
+    z-index: 0;
+    text-align: right;
+}
+
+header .contact-heading {
+    color: white;
+}
+
+.header-background-color{
+    background-color: #333399;
+    font-size: 0.9em;
+    padding: 1em;
+    top: -1em;
+    position: absolute;
+    left: 0em;
+    right: 0em;
+    z-index: 0;
+}
+
+.location-heading {
+    font-size: 0.9em;
+    background-color: rgba(255, 0, 0, 0);
+    padding: 0.3em;
+    position: absolute;
+    top: -0.85em; /* Przesunięcie w pionie od góry */
+    left: 0em; /* Przesunięcie w poziomie od lewej */
+    right: 0em;
+    z-index: 0; /*z-index ustawia który obszar ma być na wierzchu */
+}
+
+header .location-heading {
+    color: white;
+}
+
+.badge_centre{
+    display: flex;
+    justify-content: center;
+    margin-top: -2em;
+}
+
+.fb_image_center {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -22%);
+}
+
+#myFbImage {
+    width: 2em;
+    height: 2em;
+    margin-left: 0em;
+    margin-top: -0.1em;
+}
+
+.fb_image_center:hover{
+    transform: translate(0%, -22%) scale(1.05);
+}
+
+/*.header-image:hover {
+    transform: scale(1.1);
+}*/
+
+.chat_image_center {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -22%);
+}
+
+#myChatImage {
+    width: 2.3em;
+    height: 2.3em;
+    margin-left: 5.54em;
+    margin-top: -2.57em;
+}
+
+.chat_image_center:hover{
+    transform: translate(0%, -22%) scale(1.0175);
+}
+
+.ig_image_center {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -22%);
+}
+
+#myIgImage {
+    width: 2.02em;
+    height: 2.02em;
+    margin-left: -5em;
+    margin-top: -2.25em;
+    margin-bottom: 2.2em;
+}
+
+.ig_image_center:hover{
+    transform: translate(0%, -22%) scale(1.02);
+}
+
+.badge_img {
+    max-width: 18.75em; /* dostosowanie szerokości */
+    transform: scale(0.7); /* 0.7 normalnego rozmiaru */
+    transition: transform 0.3s;
+}
+
+/*powiekszenie herbu po najechaniu myszą*/
+/*.badge_img:hover {
+    transform: scale(1.1);
+}*/
+
+
+/*PODSTRONY*/
+
+/*wycentrowanie podstron*/
+.menu-container {
+  display: flex;
+  justify-content: center; /* Wycentrowanie elementów w poziomie */
+  height: 15vh; /* Ustawienie wysokości kontenera na pełną wysokość widoku */
+}
+
+/* stylizacja linków */
+a {
+  display: inline-block;
+  padding: 0.75em;
+  text-decoration: none;
+  color: #000;
+  font-size: 1em;
+}
+
+/* Zmiana koloru tła aktywnego linku */
+/*a.active {
+  background-color: #66CC66;
+}*/
+
+/*podkreślenie po najeechaniu myszą*/
+a:hover {
+  border-bottom: 0.15em solid #333399; /* grubość i kolor podkreślenia */
+  padding-bottom: 0.3em;
+  position: relative;
+  bottom: 0.2em;
+}
+
+/* odstęp między linkami w menu */
+.menu-item + .menu-item {
+  margin-left: 0.625em;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  background-color: #f0f0f0;
+}
+
+.menu-item.has-submenu li:not(:last-child) {
+    border-bottom: 0.05em solid #fff; /* biała linia oddzielająca podsekcje */
+}
+
+/*podmenu po najechaniu myszą na menu-item */
+.menu-item:hover .submenu {
+  display: block;
+  z-index: 2;
+}
+
+/*podmenu w pionie */
+.menu-item:hover .submenu li {
+  display: block;
+}
+
+/*menu w poziomie */
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* link pod sobą*/
+.menu-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 10em; /* odstępy między podsekcjami */
+  margin-left: 10em;
+}
+
+
+/*pokaz slajdów*/
+
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper{
+    width: 60%;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+/*drużyny młodzierzowe*/
+
+.team_container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 2em;
+     }
+
+ .team-image {
+     display: flex;
+     justify-content: center;
+     max-width: 50%;
+     margin-top: 0em;
+     margin-left: 15.5em;
+     margin-right: 15.5em;
+     }
+
+ .team-image-senior {
+     display: flex;
+     justify-content: center;
+     max-width: 50%;
+     margin-top: 0em;
+     margin-left: 15.5em;
+     margin-right: 15.5em;
+      }
+
+ .team-image img{
+      width: 40em;
+      height: auto;
+      border-radius: 1em;
+      }
+
+ .team-image-senior img{
+      flex: 1;
+      width: 45em;
+      height: auto;
+      border-radius: 1em;
+      }
+
+.team-description {
+     flex: 1;
+     max-width: 30em;
+     padding: 0.1em;
+     /*border: 2px solid #333399;*/
+     border-radius: 15em;
+     margin-right: 10em;
+     margin-top: -2em;
+     }
+
+
+.team-description-senior {
+     flex: 1;
+     max-width: 30em;
+     padding: 0.1em;
+     /*border: 2px solid #333399;*/
+     border-radius: 15em;
+     margin-right: 7em;
+     margin-top: -2em;
+     }
+
+.coach-info, .training-dates, .battle-cry {
+    margin-bottom: 1em;
+    }
+
+.usefull-info {
+    margin-top: 4em;
+}
+
+.coach-info h2, .training-dates h2, .battle-cry h2 {
+    margin-bottom: 0.1em;
+    }
+
+.usefull-info h2 {
+    margin-bottom: 0.1em;
+    font-weight: bold;
+    font-size: 1.7em;
+    }
+
+.coach-info p, .training-dates p {
+    margin-top: 0.1em;
+    }
+
+.usefull-info p{
+    margin-top: 0.1em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.battle-cry p {
+    margin-top: -0.75em;
+    }
+
+#rozgrywki_info:hover {
+    font-size: 110%; /*zmienić rozmiar tekstu */
+    cursor: pointer; /*zmiana kursora*/
+}
+
+#rozgrywki_info {
+    font-style: italic;
+    color: #333399;
+}
+
+.team-info {
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    /*text-decoration: underline;
+    text-decoration-color: #333399;*/
+}
+
+.sectionAbout {
+    margin: 0 auto;
+    text-align: left;
+    padding: 1.5em;
+    /*border: 1px solid #ccc;*/
+    width: 70%;
+    font-size: 1em;
+    opacity: 1;
+}
+
+.sectionAbout h2 {
+    font-size: 1.6em;
+    opacity: 0.6;
+}
+
+.counter {
+    margin-top: -5.0em;
+    margin-left: 2.0em;
+    opacity: 0.7;
+}
+/*
+.info-style {
+    text-align: center;
+    margin-top: 10em;
+}
+
+.real-info {
+   margin-right: 15px;
+   text-decoration: none;
+   position: relative;
+}
+*/
+
+
+  .information_description {
+    display: flex;
+    justify-content: center;
+  }
+
+  .overall_info1 {
+    position: absolute;
+    margin-top: 8em;
+    justify-content: center;
+    display: flex;
+  }
+
+  .info_description {
+    margin-top: 11.25em;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+  }
+
+  .real_info1, .real_info2, .real_info3 {
+    text-align: center;
+    flex: 1;
+    margin: 0 4.5em;
+  }
+
+  #click1:hover, #click2:hover, #click3:hover {
+    font-size: 110%; /*zmienić rozmiar tekstu */
+    cursor: pointer; /*zmiana kursora*/
+  }
+
+  #click1, #click2, #click3 {
+    font-style: italic;
+    color: #333399;
+  }
+
+  .click1, click2, click3 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  #click1, #click2, #click3 {
+    margin-top: -1em;
+  }
+
+}
+
+
+@media screen and (max-width: 1375px) {
+
+/*aktywna podstrona*/
+.menu-link.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.1em;
+    background-color: #333399;
+    position: relative;
+    bottom: -0.4em;
+}
+
+/*nagłówek kontakt*/
+.contact-heading {
+    font-size: 0.9em;
+    background-color: rgba(255, 0, 0, 0);
+    padding: 0.3em;
+    position: absolute;
+    top: 1.3em;
+    left: 0.9em;
+    right: 0em;
+    z-index: 0;
+    text-align: left;
+}
+
+header .contact-heading {
+    color: white;
+}
+
+.header-background-color{
+    background-color: #333399;
+    font-size: 0.9em;
+    padding: 2em;
+    top: -1em;
+    position: absolute;
+    left: 0em;
+    right: 0em;
+    z-index: 0;
+}
+
+.location-heading {
+    font-size: 0.9em;
+    background-color: rgba(255, 0, 0, 0);
+    padding: 0.3em;
+    position: absolute;
+    top: -0.85em; /* Przesunięcie w pionie od góry */
+    left: 0em; /* Przesunięcie w poziomie od lewej */
+    right: 0em;
+    z-index: 0; /*z-index ustawia który obszar ma być na wierzchu */
+}
+
+header .location-heading {
+    color: white;
+}
+
+.badge_centre{
+    display: flex;
+    justify-content: center;
+    margin-top: -2em;
+}
+
+.fb_image_center {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -22%);
+}
+
+#myFbImage {
+    width: 2em;
+    height: 2em;
+    margin-left: 12.4em;
+    margin-top: -0.1em;
+}
+
+.fb_image_center:hover{
+    transform: translate(0%, -22%) scale(1.05);
+}
+
+/*.header-image:hover {
+    transform: scale(1.1);
+}*/
+
+.chat_image_center {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -22%);
+}
+
+#myChatImage {
+    width: 2.3em;
+    height: 2.3em;
+    margin-left: 17em;
+    margin-top: -2.57em;
+}
+
+.chat_image_center:hover{
+    transform: translate(0%, -22%) scale(1.0175);
+}
+
+.ig_image_center {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -22%);
+}
+
+#myIgImage {
+    width: 2.02em;
+    height: 2.02em;
+    margin-left: 8em;
+    margin-top: -2.25em;
+    margin-bottom: 2.2em;
+}
+
+.ig_image_center:hover{
+    transform: translate(0%, -22%) scale(1.02);
+}
+
+.badge_img {
+    max-width: 18.75em; /* dostosowanie szerokości */
+    transform: scale(0.7); /* 0.7 normalnego rozmiaru */
+    transition: transform 0.3s;
+}
+
+/*powiekszenie herbu po najechaniu myszą*/
+/*.badge_img:hover {
+    transform: scale(1.1);
+}*/
+
+
+/*PODSTRONY*/
+
+/*wycentrowanie podstron*/
+.menu-container {
+  display: flex;
+  justify-content: center; /* Wycentrowanie elementów w poziomie */
+  height: 15vh; /* Ustawienie wysokości kontenera na pełną wysokość widoku */
+  margin-bottom: 5em;
+}
+
+/* stylizacja linków */
+a {
+  display: inline-block;
+  padding: 0.75em;
+  text-decoration: none;
+  color: #000;
+  font-size: 1em;
+}
+
+/* Zmiana koloru tła aktywnego linku */
+/*a.active {
+  background-color: #66CC66;
+}*/
+
+/*podkreślenie po najeechaniu myszą*/
+a:hover {
+  border-bottom: 0.15em solid #333399; /* grubość i kolor podkreślenia */
+  padding-bottom: 0.3em;
+  position: relative;
+  bottom: 0.2em;
+}
+
+/* odstęp między linkami w menu */
+.menu-item + .menu-item {
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  background-color: #f0f0f0;
+}
+
+.menu-item.has-submenu li:not(:last-child) {
+    border-bottom: 0.05em solid #fff; /* biała linia oddzielająca podsekcje */
+}
+
+/*podmenu po najechaniu myszą na menu-item */
+.menu-item:hover .submenu {
+  display: block;
+  z-index: 2;
+}
+
+/*podmenu w pionie */
+.menu-item:hover .submenu li {
+  display: block;
+}
+
+.menu {
+  display: center;
+  display: block;        /*dla małcyh ekranów menu wyświetla sie inaczej*/
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* link pod sobą*/
+.menu-item {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+
+/*pokaz slajdów*/
+
+.slideshow-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -11em;
+}
+
+.swiper{
+    width: 60%;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+/*drużyny młodzierzowe*/
+
+.team_container {
+     justify-content: space-between;
+     align-items: center;
+     padding: 2em;
+     }
+
+ .team-image {
+     display: flex;
+     justify-content: center;
+     max-width: 50%;
+     margin-top: 44em;
+     margin-left: 11em;
+     margin-right: 11em;
+     }
+
+ .team-image-senior {
+     display: flex;
+     justify-content: center;
+     max-width: 50%;
+     margin-top: 19em;
+     margin-left: 11em;
+     margin-right: 11em;
+      }
+
+ .team-image img {
+      width: 20em;
+      border-radius: 1em;
+      margin-top: 20em;
+      }
+
+ .team-image-senior img{
+      width: 20em;
+      border-radius: 1em;
+      margin-top: 15em;
+      }
+
+.team-description {
+     max-width: 20em;
+     padding: 0.1em;
+     /*border: 2px solid #333399;*/
+     border-radius: 15em;
+     margin-right: 10em;
+     margin-top: -85em;
+     text-align: center;
+     margin-left: 35%;
+     font-size: 0.8em;
+     }
+
+
+
+.team-description-senior {
+     max-width: 20em;
+     padding: 0.1em;
+     /*border: 2px solid #333399;*/
+     border-radius: 15em;
+     margin-right: 10em;
+     margin-top: -48em;
+     text-align: center;
+     margin-left: 35%;
+     font-size: 0.8em;
+     }
+
+.coach-info, .training-dates, .battle-cry {
+    margin-bottom: 1em;
+    }
+
+.usefull-info {
+    margin-top: 4em;
+}
+
+.coach-info h2, .training-dates h2, .battle-cry h2 {
+    margin-bottom: 0.1em;
+    }
+
+.usefull-info h2 {
+    margin-bottom: 0.1em;
+    font-weight: bold;
+    font-size: 1.7em;
+    }
+
+.coach-info p, .training-dates p {
+    margin-top: 0.1em;
+    }
+
+.usefull-info p{
+    margin-top: 0.1em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.battle-cry p {
+    margin-top: -0.75em;
+    }
+
+#rozgrywki_info:hover {
+    font-size: 110%; /*zmienić rozmiar tekstu */
+    cursor: pointer; /*zmiana kursora*/
+}
+
+#rozgrywki_info {
+    font-style: italic;
+    color: #333399;
+}
+
+.team-info {
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    /*text-decoration: underline;
+    text-decoration-color: #333399;*/
+}
+
+.sectionAbout {
+    margin: 0 auto;
+    text-align: left;
+    padding: 1.5em;
+    /*border: 1px solid #ccc;*/
+    width: 70%;
+    font-size: 1em;
+    opacity: 1;
+    margin-top: 0em;
+}
+
+.sectionAbout h2 {
+    font-size: 1.6em;
+    opacity: 0.6;
+}
+
+.counter {
+    margin-top:2.0em;
+    margin-left: 2.0em;
+    opacity: 0.7;
+}
+
+.sectionAboutInGeneral {
+    margin-top: 10em;
+}
+
+  .information_description {
+    display: flex;
+    justify-content: center;
+  }
+
+  .overall_info1 {
+    position: absolute;
+    margin-top: -12.5em;
+    justify-content: center;
+  }
+
+  .info_description {
+    margin-top: -8em;
+    position: absolute;
+    justify-content: center;
+  }
+
+  .real_info1, .real_info2, .real_info3 {
+    flex: 1;
+    margin: 0 4.5em;
+  }
+
+  #click1, #click2, #click3 {
+    margin-top: -1em;
+  }
+
+  #click1:hover, #click2:hover, #click3:hover {
+    font-size: 110%; /*zmienić rozmiar tekstu */
+    cursor: pointer; /*zmiana kursora*/
+  }
+
+  #click1, #click2, #click3 {
+    font-style: italic;
+    color: #333399;
+  }
+
+  .click1, click2, click3 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+}
